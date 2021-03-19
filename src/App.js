@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Useeffect from './Component/Useeffect';
 
 function App() {
   return (
     <div className="App">
-     <p>hi</p>
+     <Useeffect/>
     </div>
   );
 }
