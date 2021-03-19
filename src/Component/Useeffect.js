@@ -13,17 +13,17 @@ import React, { useState ,useEffect } from 'react'
 
     return (
         <div>
-        <h1>{randomNumber}</h1>
+            <h1>{randomNumber}</h1>
 
-        <button 
-        onClick= {()=>{setRandomNumber(Math.random())}}
-        > Random number</button>
+            <button 
+                onClick= {()=>{setRandomNumber(Math.random())}}
+                > Random number</button>
 
-        <button className="reset" onClick={()=>{setEffectLogs([]) || setRandomNumber(0)}}>Reset</button>
+            <button className="reset" onClick={()=>{setEffectLogs([]) || setRandomNumber(0)}}>Reset</button>
 
-        <div>
-            {effectLogs.map((effect,index)=>(<div key={index}>{':))'.repeat(index)+effect}</div>))}
-        </div>
+            <div>
+                {effectLogs.map((effect,index)=>(<div key={index}>{':))'.repeat(index)+effect}</div>))}
+            </div>
 
         </div>
     )
